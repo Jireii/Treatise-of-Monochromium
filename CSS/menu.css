@@ -1,0 +1,252 @@
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*master styles*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 100, 100);
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    cursor: url(../images/rsz_1cursor.png), auto;
+}
+
+body {
+    background-color: black;
+    background-image: url(../images/homebg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    animation: transitionIn 0.5s;
+}
+
+.navbar {
+    color: white;
+    overflow: hidden;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    float: left;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    padding: 20px 30px;
+}
+
+.navbar p {
+    float: right;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    padding: 0 30px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    transition: ease-in 0.2s;
+}
+
+/*style*/
+/*@keyframes leftanim {
+    from {
+        
+    }
+    to {
+        margin-left: 30px;
+    }
+}*/
+
+.container {
+    margin-top: 56px;
+    width: 100%;
+    height: 1250px;
+    overflow: hidden;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.left {
+    float: left;
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.mc1banner {
+    width: 233px; 
+    height: 422px;
+    margin-left: -64px;
+    transition: 1s;
+}
+
+.mc1banner:hover {
+    width: 233px; 
+    height: 422px;
+    margin-left: 20px;
+    transition: 1s;
+    color: white;
+}
+
+.uk0 {
+    width: 233px; 
+    height: 422px;
+    margin-top: 50px;
+    margin-left: -32px;
+    transition: 1s;
+}
+
+.uk0:hover {
+    width: 233px; 
+    height: 422px;
+    margin-left: 10px;
+    transition: 1s;
+    color: white;
+}
+
+.right {
+    float: left;
+    margin-top: 50px;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.uk1 {
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-right: -28px;
+    transition: 1s;
+}
+
+.uk1:hover {
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-right: 15px;
+    transition: 1s;
+    color: white;
+}
+
+.uk2 {
+    margin-left: 500px;
+    margin-top: 27px;
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-right: -28px;
+    transition: 1s;
+}
+
+.uk2:hover {
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-right: 15px;
+    transition: 1s;
+    color: white;
+}
+
+/*.uk2 {
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-top: 50px;
+    margin-right: -12px;
+    transition: 1s;
+}
+
+.uk2:hover {
+    width: 233px; 
+    height: 422px;
+    float: right;
+    margin-right: 5px;
+    transition: 1s;
+    color: white;
+}*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
